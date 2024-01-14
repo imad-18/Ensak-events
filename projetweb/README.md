@@ -27,6 +27,6 @@ if (!$googleMapsApiKey) {
 ?>
 ```
 
-If you want to customize the style of the website add you CSS files in styles folder.
+If you want to customize the style of the website add your CSS files in styles folder.
 
 Now you're ready to go 😀.

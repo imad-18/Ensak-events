@@ -1,5 +1,5 @@
 <?php
-$googleMapsApiKey = "AIzaSyCILYUi85aLQriDbWWT1CbYVXH9LjD_0ZE";
+$googleMapsApiKey = "ADD YOUR API KEY HERE!!";
 if (!$googleMapsApiKey) {
   die('Google Maps API key not set.');
 }

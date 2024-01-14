@@ -1,0 +1,125 @@
+@import url("layout.css");
+
+/* global */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  margin: 0 5px;
+}
+
+#map {
+  width: 300px;
+  height: 250px;
+  border: 1px solid;
+}
+/*styled by me now 28/12/2023 - 22:37*/
+.logoo img{
+  width: 100px;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+
+  color: white;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgb(186, 213, 173) 0%, rgba(30,128,91,1) 35%, rgb(115, 126, 116) 100%);; /* Set the background color */
+  padding: 2px 6%; /*2px:top&buttom ; 6%:left&right*/
+}
+
+  /*Footer*/
+
+  nav ul {
+    list-style-type: none;
+    /*margin: 0 0 40px 0;*/
+    padding: 0;
+    display: inline-flex;
+    margin: 10px 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*Create_Event*/
+.h1_eventform{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 0 0;
+  }
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Optional: Add some additional styling for better visual appeal */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }

@@ -1,0 +1,132 @@
+@import url("layout.css");
+
+/* global */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  margin: 0 5px;
+}
+
+#map {
+  width: 300px;
+  height: 250px;
+  border: 1px solid;
+}
+/*styled by me now 28/12/2023 - 22:37*/
+.logoo img{
+  width: 100px;
+}
+
+#loggin:hover {
+  background-color: #5d4037; /* Darker brown on hover */
+}
+/*header*/
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+
+  color: white;
+  background: rgb(2,0,36); /*linear-gradient(90deg, rgb(84 165 195) 0%, #b7b7b7 35%, rgb(211 211 211) 100%)*/
+  background: linear-gradient(90deg, rgb(186, 213, 173) 0%, rgba(30,128,91,1) 35%, rgb(115, 126, 116) 100%);; /* Set the background color */
+  padding: 2px 6%; /*2px:top&buttom ; 6%:left&right*/
+}
+
+
+
+
+
+  /*Footer*/
+
+  nav ul {
+    list-style-type: none;
+    /*margin: 0 0 40px 0;*/
+    padding: 0;
+    display: inline-flex;
+    margin: 10px 0;
+}
+
+nav li {
+    margin-right: 20px;
+    text-align: none;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*create_event*/
+
+
+/*card-item*/
+.event-card {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+ 
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.event-card div {
+  padding: 0px;
+}
+
+.event-card h3 {
+  margin-top: 0;
+}
+
+.event-card p {
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.event-card a {
+  display: block;
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.event-card a:hover {
+  background-color: #45a049;
+}
+

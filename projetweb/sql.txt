@@ -1,0 +1,84 @@
+SELECT
+SELECT nom_du_champ FROM nom_du_tableau
+---------------------------------------
+SELECT ville  FROM 'client'
+SELECT nom, prénom FROM 'client'
+SELECT * FROM 'client' --> séléctionner tt les colonnes du table client
+
+SELECT DISTINCT ma_colonne FROM nom_du_tableau
+-->DISTICT est utilisé pour séléctionner une seule fois les ligne répétées
+(but d'éviter les redendances) et pour éviter les résultats en doubles.
+
+==============================================
+SQL as: permet de rennomer une colonne dans une table:
+---------------------------------------
+SELECT colonne1 AS c1, colonne2 FROM `table`
+
+==============================================
+La commande WHERE s’utilise en complément à une requête utilisant SELECT:
+---------------------------------------
+SQL and/or:utilisées au sein de la commande WHERE pour combiner des conditions:
+
+SELECT nom_colonnes
+FROM nom_table
+WHERE condition
+     ------- 
+WHERE condition1 AND/OR condition2
+============================================
+SQL :IN -->instead of using or multiple times
+
+SELECT nom_colonne
+FROM table
+WHERE nom_colonne IN ( valeur1, valeur2, valeur3, ... )
+exemple:--------
+SELECT *
+FROM utilisateur
+WHERE prenom IN ( 'Maurice', 'Marie', 'Thimoté' )
+instead of: 
+WHERE prenom='Maurice' OR prenom='Marie' OR prenom='Thimoté'
+
+==========================================
+SQL: BETWEEN:
+Si l’ont souhaite obtenir les membres qui se sont inscrit entre le 1 avril 2012 
+et le 20 avril 2012 il est possible d’effectuer la requête suivante:
+N.B: date_inscription = champ/colonne des dates d'inscription
+SELECT *
+FROM utilisateur
+WHERE date_inscription BETWEEN ’2012-04-01′ AND ’2012-04-20′
+
+=========================================
+SQL:LIKE:
+
+SELECT * FROM table
+WHERE colonne LIKE modele
+modele :Pour voir ces modèle voir cours_sql page:19
+exemple:
+'%e':Obtenir les résultats qui se terminent par « e »
+'N%':Obtenir les résultats qui commencent par « N»
+
+========================================
+SQL:NULL / NOT NULL
+Il est possible d’obtenir la liste des utilisateurs qui ne possèdent pas 
+d’adresse de livraison en utilisant la requête SQL suivante
+
+SELECT *
+FROM `utilisateur`
+WHERE `fk_adresse_livraison_id` IS NULL
+
+=======================================
+SQL:GROUP BY
+SELECT colonne1, fonction(colonne2)
+FROM table
+GROUP BY colonne1
+exemple------
+SELECT client, SUM(tarif)
+FROM achat
+GROUP BY client
+La fonction SUM() permet d’additionner la valeur de chaque tarif pour un même client.
+
+000000000000000000000000000000000000
+Les commandes SQL à connaître avant de commencer à créer une db:
+DROP DATABASE nom_base_de_données ; Supprimer une base de données
+CREATE DATABASE nom_base_de_données ; Créer une base de données
+USE nom_base_de_données ; Indique la BDD à utiliser et dans laquelle on exécute les requêtes.
+CREATE TABLE nom_table ; Créer une table dans la BDD utilisée

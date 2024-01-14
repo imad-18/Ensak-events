@@ -1,0 +1,90 @@
+/* Add this CSS for styling the form */
+
+body{
+    background: url('../images/ensak1.jpg') no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+  form {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /*background-color: #f5f5f5;*/
+    backdrop-filter: blur(4px);
+  
+  }
+  
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  
+  input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Center the button within the form */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  p{
+    margin-top: 12px;
+  }
+  /*lOGIN FORM*/
+  h2 {
+    text-align: center;
+    color: #12253b; /* Title color */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* Add a decorative line under the title */
+  h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #293d53; /* Line color */
+    margin: 10px auto;
+  }
+  /* Styles for the "Log In" link */
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: whitesmoke;
+  }
+  
+  a {
+    color: #004085;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
